@@ -1,0 +1,35 @@
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  height: auto;
+  width: 100%;
+  padding-top: 40px;
+  margin-top: 20px;
+  color: white;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.content h4 {
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.content p {
+  max-width: 500px;
+  margin: 5px auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: #cacdd2;
+}
