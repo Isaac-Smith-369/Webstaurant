@@ -1,0 +1,19 @@
+.button {
+  color: black;
+  width: auto;
+  height: 50px;
+  background-color: white;
+  border: 3px solid black;
+  transition: all 200ms linear;
+  letter-spacing: 3.5px;
+  font-size: 12px;
+  display: inline-block;
+  line-height: 1;
+  border-style: solid;
+  text-transform: capitalize;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+  cursor: pointer;
+}

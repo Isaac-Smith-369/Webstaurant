@@ -1,31 +1,3 @@
-# Webstaurant: A restuarant application on the web
-
-## Begin Here
-
-Clone this repo
-
-```bash
-git clone [link to this repo]
-```
-
-Install all dependencies
-
-```bash
-yarn
-```
-
-Run the development server:
-
-```bash
-yarn dev
-```
-
-Open [http://localhost:3000/](http://localhost:3000/) with your browser to see the result.
-
-Components can be found at [http://localhost:3000/scratchpad/](http://localhost:3000/scratchpad/)
-
----
-
 # How to commit to this repo
 
 ## Before you commit your code
@@ -103,4 +75,4 @@ You can delete the ticket branch you created. Note that this will only delete it
 git branch -D [name of ticket]
 ```
 
-P.S If you have any problems following this tutorial, ask for help in the group chat.
+P.S: If you have any problems following this tutorial, ask for help in the group chat.
