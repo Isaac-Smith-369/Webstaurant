@@ -53,11 +53,11 @@ This will stage all of your changes.
 Commit your changes and add a commit message. Your commit message should have the following format.
 
 ```bash
-git commit -m "[type]: [description]"
+git commit -m "[type]: [commit message]"
 ```
 
 Where the type could be any of these
-|Feature| Description|
+|Type| Description|
 |--------|--------|
 |Feat |The new feature you're adding |to a particular application
 |Fix| A bug fix
