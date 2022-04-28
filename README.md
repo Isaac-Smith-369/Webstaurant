@@ -67,6 +67,12 @@ Where the type could be any of these
 |Docs| Everything related to documentation
 |Chore| Regular code maintenance.
 
+After you commit your code, pull all the new changes may have been made in the main branch into your current branch.
+
+```bash
+git pull origin main
+```
+
 Push your commited changes to a new branch the remote repository.
 
 ```bash
@@ -74,12 +80,6 @@ git push -u origin [name of ticket]
 ```
 
 This will push your changes into a new branch with the name of your ticket.
-
-After you push your code, pull all the new changes may have been made in the main branch into your current branch.
-
-```bash
-git pull origin main
-```
 
 Create a new pull request on github and if everything is a-ok, your changes will be merged with the main branch
 
@@ -91,7 +91,7 @@ Checkout to main on your local machine.
 git checkout main
 ```
 
-Pull all the changes that have been made in the main branch.
+After your changes have been approved and merged with the main branch, pull all the changes from the main branch to your local machine.
 
 ```bash
 git pull
