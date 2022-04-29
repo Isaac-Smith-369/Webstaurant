@@ -110,6 +110,7 @@ git branch -D [name of ticket]
 | Isaac Smith    |
 | Solomon Bataly |
 | Hamid Abass    |
+| Samuel Osae Mensah Adjar |
 
 ---
 
