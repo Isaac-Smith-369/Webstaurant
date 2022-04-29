@@ -104,3 +104,9 @@ git branch -D [name of ticket]
 ```
 
 P.S If you have any problems following this tutorial, ask for help in the group chat.
+
+
+
+Group members:
+Solomon Bataly
+Hamid Abass
