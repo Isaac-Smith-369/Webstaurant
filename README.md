@@ -59,7 +59,7 @@ git commit -m "[type]: [commit message]"
 Where the type could be any of these
 |Type| Description|
 |--------|--------|
-|Feat |The new feature you're adding |to a particular application
+|Feat |The new feature you're adding to a particular application
 |Fix| A bug fix
 |Style| Feature and updates related to styling
 |Refactor| Refactoring a specific section of the codebase
@@ -103,10 +103,14 @@ You can delete the ticket branch you created. Note that this will only delete it
 git branch -D [name of ticket]
 ```
 
+---
+
+| Group members  |
+| -------------- |
+| Isaac Smith    |
+| Solomon Bataly |
+| Hamid Abass    |
+
+---
+
 P.S If you have any problems following this tutorial, ask for help in the group chat.
-
-
-
-Group members:
-Solomon Bataly
-Hamid Abass
