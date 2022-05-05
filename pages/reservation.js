@@ -40,12 +40,13 @@ const Reservation = () => {
 
   return (
     <div className={styles.container}>
+      {/* <div className={styles.overlay}></div> */}
       <div className={styles.headingtitle}>
         <h3>Reservation</h3>
         <Divider width={200} style={{ borderTop: "3px solid black" }} />
       </div>
       <div className={styles.heading}>
-        <p>lorem ipsum dolor sit amet consecteur</p>
+        <p>Reserve a table at our fine establishment</p>
       </div>
       <div className={styles.formcontainer}>
         <form id="reservation-form">

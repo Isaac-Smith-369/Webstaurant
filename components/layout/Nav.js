@@ -34,7 +34,11 @@ const Nav = () => {
           </Link>
         </div>
         <div className={styles.navButton}>
-          <PrimaryButton label="RESERVE A TABLE" />
+          <Link href={links.reservation}>
+            <a>
+              <PrimaryButton label="RESERVE A TABLE" />
+            </a>
+          </Link>
         </div>
         {/* <div className={styles.navCalendar}>
           <Link href={links.reservation}>

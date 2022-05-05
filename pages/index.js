@@ -16,13 +16,14 @@ function Home() {
         <div className={styles.contentContainer}>
           <div className={styles.imgContainer}>
             <Image
-              src="/img/pasta1.jpg"
+              src="/img/breakfast.jpeg"
               alt="image"
               width={500}
               height={550}
               quality={100}
               placeholder="blur"
-              blurDataURL="/img/pasta1.jpg"
+              blurDataURL="/img/breakfast.jpeg"
+              objectFit="contain"
             />
           </div>
           <div className={styles.content}>

@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Copperplate"; /*a name to be used later*/
+  src: url("/public/OPTICopperplate.otf"); /*URL to font*/
+}
+
 * {
   box-sizing: border-box;
 }
