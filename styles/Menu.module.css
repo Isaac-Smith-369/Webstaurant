@@ -1,0 +1,14 @@
+.menu {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.breakfast h3 {
+  text-align: center;
+}
+
+.menuItem {
+  margin-top: 50px;
+  text-align: center;
+}

@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  margin: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 15%;
+}
+
+.headingtitle {
+  color: black;
+}
+
+.heading {
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+.formcontainer {
+  color: black;
+  width: 50%;
+}
+
+.textfield {
+  border: 2px solid black;
+  width: 400px;
+  height: 55px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Brandon-font", Sans-serif;
+  margin-bottom: 25px;
+  padding-left: 10px;
+}
+
+.textarea {
+  border: 3px solid black;
+  margin-bottom: 20px;
+  width: 400px;
+  height: 50px;
+  text-transform: capitalize;
+  padding-left: 10px;
+}
+
+.footer {
+  width: 50%;
+  margin-top: 20px;
+}

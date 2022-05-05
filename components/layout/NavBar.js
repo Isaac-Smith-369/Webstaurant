@@ -1,9 +1,15 @@
+import Link from "next/link";
+import { links } from "utilities/links";
 import style from "/styles/NavBar.module.css";
 
 const NavBar = () => {
   return (
     <nav className={style.navbar}>
-      <div className={style.logo}>Webstaurant</div>
+      <div className={style.logo}>
+        <Link href="/">
+          <a>Webstaurant</a>
+        </Link>
+      </div>
       <ul className={style.navlinks}>
         <input type="checkbox" className={style.check} id="checkbox-toggle" />
         <label htmlFor="checkbox-toggle" className={style.hamburger}>
@@ -11,16 +17,24 @@ const NavBar = () => {
         </label>
         <div className={style.menu}>
           <li>
-            <a href="#">Home</a>
+            <Link href={links.home}>
+              <a>Home</a>
+            </Link>
           </li>
           <li>
-            <a href="#">Reservation</a>
+            <Link href={links.reservation}>
+              <a>Reservation</a>
+            </Link>
           </li>
           <li>
-            <a href="#">Menu</a>
+            <Link href={links.menu}>
+              <a>Menu</a>
+            </Link>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <Link href={links.contact}>
+              <a>Contact</a>
+            </Link>
           </li>
         </div>
       </ul>

@@ -1,10 +1,11 @@
-import style from "/styles/Divider.module.css";
+import styles from "/styles/Divider.module.css";
 
-const Divider = ({ width }) => {
+const Divider = ({ width, align, style }) => {
   return (
     <hr
-      style={width ? { width: `${width}px` } : {}}
-      className={style.divider}
+      align={align}
+      style={width ? { width: width, ...style } : {}}
+      className={styles.divider}
     />
   );
 };

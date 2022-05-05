@@ -3,12 +3,12 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: black;
-  color: white;
+  /* background-color: black; */
+  color: black;
 }
 
 .navlinks a {
-  color: white;
+  color: black;
 }
 
 .logo {
@@ -48,16 +48,21 @@
   .menu {
     display: none;
     position: absolute;
-    background-color: black;
+    background-color: white;
     right: 0;
     left: 0;
     text-align: center;
     padding: 16px 0;
   }
 
+  .navlinks a:hover {
+    color: white;
+    transition: 0.3s ease;
+  }
+
   .menu li:hover {
     display: inline-block;
-    background-color: white;
+    background-color: black;
     transition: 0.3s ease;
   }
 

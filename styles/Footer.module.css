@@ -3,12 +3,12 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: black;
+  /* background: black; */
   height: auto;
   width: 100%;
   padding-top: 40px;
   margin-top: 20px;
-  color: white;
+  color: black;
 }
 
 .content {
@@ -22,7 +22,7 @@
 .content h4 {
   font-size: 2rem;
   font-weight: 300;
-  text-transform: capitalize;
+  text-transform: uppercase;
   line-height: 3rem;
 }
 
@@ -31,5 +31,5 @@
   margin: 5px auto;
   line-height: 28px;
   font-size: 14px;
-  color: #cacdd2;
+  color: gray;
 }

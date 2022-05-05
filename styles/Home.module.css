@@ -1,3 +1,54 @@
-.container {
-  margin: 0px;
+.workinghours {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+}
+
+.hours {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+}
+
+.introContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentContainer {
+  display: flex;
+  margin-top: 20px;
+  width: 80%;
+  flex-direction: row;
+}
+
+.imgContainer {
+  margin: 10%;
+  margin-top: 5%;
+}
+
+.content {
+  width: 40%;
+  text-align: right;
+}
+
+.introHeading {
+  font-family: "Brandon-font", Sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 20px;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 768px) {
+  .contentContainer {
+    flex-direction: column-reverse;
+  }
+  .imgContainer {
+    align-self: center;
+  }
+  .content {
+    width: 100%;
+  }
 }

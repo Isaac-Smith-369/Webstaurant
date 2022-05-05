@@ -1,0 +1,11 @@
+.workinghours {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+}
+
+.hours {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+}

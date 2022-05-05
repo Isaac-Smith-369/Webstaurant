@@ -2,7 +2,7 @@ const theme = {
   primary: "#000000",
   primary100: "#e9e6e2",
   primary200: "#d3d2cf",
-  primary300: "faf9f5",
+  primary300: "#faf9f5",
   primary400: "#484b4d",
 };
 

@@ -1,7 +1,8 @@
 import Head from "next/head";
-import NavBar from "@/layout/NavBar";
-import Footer from "@/layout/Footer";
 import "styles/globals.css";
+import Nav from "@/layout/Nav";
+import Footer from "@/layout/Footer";
+import NewsLetter from "components/NewsLetter";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -9,9 +10,14 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>Webstaurant</title>
         <meta name="description" content="A restaurant on the web" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
       </Head>
-      <NavBar />
+      <Nav />
       <Component />
+      <NewsLetter />
       <Footer />
     </>
   );

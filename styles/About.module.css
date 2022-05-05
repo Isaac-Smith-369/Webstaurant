@@ -1,0 +1,33 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 24px;
+  padding-top: 10px;
+}
+
+.subHeading {
+  font-weight: bold;
+  font-family: "Copperplate";
+  width: 60%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.content {
+  width: 60%;
+  color: gray;
+}
+
+.content p {
+  color: gray;
+  line-height: 1.4;
+  font-size: 16px;
+  padding-bottom: 5px;
+}
