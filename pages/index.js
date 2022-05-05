@@ -4,6 +4,8 @@ import Image from "next/image";
 import PrimaryButton from "components/PrimaryButton";
 import Carousel from "components/Carousel";
 import Hours from "components/Hours";
+import Link from "next/link";
+import { links } from "utilities/links";
 
 function Home() {
   return (
@@ -58,7 +60,11 @@ function Home() {
                 chef Janez Bratovž was the first Slovenian restaurant to make
                 the Worlds 50 Best Restaurants.
               </p>
-              <PrimaryButton label="READ MORE" />
+              <Link href={links.about}>
+                <a>
+                  <PrimaryButton label="READ MORE" />
+                </a>
+              </Link>
             </div>
           </div>
         </div>

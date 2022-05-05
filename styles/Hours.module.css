@@ -1,11 +1,17 @@
 .workinghours {
   display: flex;
-  padding: 20px;
-  justify-content: center;
+  padding-left: 20px;
+  justify-content: space-around;
+  width: 90%;
+  align-items: center;
 }
 
 .hours {
-  margin-left: 5%;
-  margin-right: 5%;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .workinghours {
+    flex-direction: column;
+  }
 }

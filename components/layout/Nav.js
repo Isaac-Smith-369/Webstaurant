@@ -18,7 +18,7 @@ const Nav = () => {
             </a>
           </Link>
         </div>
-        <div className={styles.bars}>
+        {/* <div className={styles.bars}>
           <input
             type="checkbox"
             className={styles.check}
@@ -27,7 +27,7 @@ const Nav = () => {
           <label htmlFor="checkbox-toggle" className={styles.hamburger}>
             <i className="fa fa-bars"></i>
           </label>
-        </div>
+        </div> */}
         <div className={styles.logo}>
           <Link href={links.home}>
             <a>Webstaurant</a>
@@ -36,13 +36,13 @@ const Nav = () => {
         <div className={styles.navButton}>
           <PrimaryButton label="RESERVE A TABLE" />
         </div>
-        <div className={styles.navCalendar}>
+        {/* <div className={styles.navCalendar}>
           <Link href={links.reservation}>
             <a>
               <i className="fa fa-calendar-o"></i>
             </a>
           </Link>
-        </div>
+        </div> */}
       </div>
       <div className={styles.navbarContainer}>
         <Divider width="100%" style={{ borderTop: "1px solid gray" }} />

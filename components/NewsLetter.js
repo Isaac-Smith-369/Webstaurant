@@ -79,7 +79,7 @@ const NewsLetter = () => {
           label="SUBMIT"
           onClick={handleSubmit}
           style={{
-            width: 300,
+            width: 260,
             height: 60,
             marginTop: 15,
           }}

@@ -5,7 +5,6 @@ import styles from "/styles/Contact.module.css";
 const Contact = () => {
   return (
     <div>
-      <Hours />
       <div className={styles.contact}>
         <div className={styles.heading}>
           <h2>Contact Us</h2>
@@ -26,6 +25,7 @@ const Contact = () => {
           the left hand corner on West Street, opposite St Martins Theatre.
         </p>
       </div>
+      <Hours />
     </div>
   );
 };
