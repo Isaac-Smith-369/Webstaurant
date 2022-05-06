@@ -35,31 +35,25 @@ function Home() {
             />
             <div className={styles.paragraphs}>
               <p>
-                JB Restaurant is the story of the Bratovž family and is built on
-                family love and cooperation. The restaurant is a real gourmets
-                paradise. Its beginnings can be traced back to the year 1992
-                when Janez Bratovž, having gained invaluable experience abroad,
-                returned home to Slovenia after 5 years. JB Restaurant with its
-                chef Janez Bratovž was the first Slovenian restaurant to make
-                the Worlds 50 Best Restaurants.
+                Webstaurant is is built on family love and cooperation. The
+                restaurant is a real gourmets paradise. having gained invaluable
+                experience abroad, returned home to Slovenia after 5 years.
+                Webstaurant with its chef was the first Ghanaian restaurant to
+                make the Worlds 50 Best Restaurants.
               </p>
               <p>
-                JB Restaurant is the story of the Bratovž family and is built on
-                family love and cooperation. The restaurant is a real gourmets
-                paradise. Its beginnings can be traced back to the year 1992
-                when Janez Bratovž, having gained invaluable experience abroad,
-                returned home to Slovenia after 5 years. JB Restaurant with its
-                chef Janez Bratovž was the first Slovenian restaurant to make
-                the Worlds 50 Best Restaurants.
+                Webstaurant is is built on family love and cooperation. The
+                restaurant is a real gourmets paradise. having gained invaluable
+                experience abroad, returned home to Slovenia after 5 years.
+                Webstaurant with its chef was the first Ghanaian restaurant to
+                make the Worlds 50 Best Restaurants.
               </p>
               <p>
-                JB Restaurant is the story of the Bratovž family and is built on
-                family love and cooperation. The restaurant is a real gourmets
-                paradise. Its beginnings can be traced back to the year 1992
-                when Janez Bratovž, having gained invaluable experience abroad,
-                returned home to Slovenia after 5 years. JB Restaurant with its
-                chef Janez Bratovž was the first Slovenian restaurant to make
-                the Worlds 50 Best Restaurants.
+                Webstaurant is is built on family love and cooperation. The
+                restaurant is a real gourmets paradise. having gained invaluable
+                experience abroad, returned home to Slovenia after 5 years.
+                Webstaurant with its chef was the first Ghanaian restaurant to
+                make the Worlds 50 Best Restaurants.
               </p>
               <Link href={links.about}>
                 <a>

@@ -12,7 +12,6 @@
 .logo {
   font-size: 50px;
   font-family: "Copperplate";
-  /* padding-right: 40px; */
 }
 
 .navCalendar {
@@ -32,7 +31,9 @@
 
 .navbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
   align-items: center;
 }
 
@@ -84,23 +85,9 @@
     display: none;
   }
 
-  /* .navCalendar {
-    display: block;
-    margin: 20px;
+  .navbar {
+    flex-direction: column;
   }
-
-  .navCalendar i {
-    font-size: 20px;
-  }
-
-  .hamburger {
-    display: block;
-    margin: 20px;
-  }
-
-  .check:checked ~ .navbar {
-    display: block;
-  } */
 
   .menu {
     flex-direction: column;
