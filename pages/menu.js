@@ -1,132 +1,108 @@
-import react, { useState } from "react";
+import react, { useEffect, useState } from "react";
 import Divider from "components/Divider";
 import Image from "next/image";
 import styles from "/styles/Menu.module.css";
-import { menu } from "utilities/data";
+import { menuTypes } from "utilities/data";
 import SecondaryButton from "components/SecondaryButton";
 
-const Menu = () => {
-  const [currentMenu, setCurrentMenu] = useState("breakfast");
+const Menu = (props) => {
+  const [menu, setMenu] = useState([]);
+  // const [contacts, setContacts] = useState(contactList);
+  const [filteredMenu, setFilteredMenu] = useState([]);
 
-  var menuItems = menu.filter((item) => {
-    return item.type === currentMenu;
-  });
+  console.log("Contacts: ", props);
 
-  const handleMenuChange = () => {
-    return;
+  const getMenu = async () => {
+    const result = await fetch("/api/menu");
+    const data = await result.json();
+    setMenu(data);
   };
 
-  // console.log(getMenu());
+  useEffect(() => {
+    getMenu();
+    return () => {};
+  }, []);
+
+  useEffect(() => {
+    handleMenuChange(menuTypes.BREAKFAST);
+    return () => {};
+  }, [menu]);
+
+  const handleMenuChange = (filter) => {
+    setFilteredMenu([]);
+    const currMenu = menu;
+    switch (filter) {
+      case menuTypes.BREAKFASNT:
+        currMenu.forEach((menuItem) => {
+          if (menuItem.type === menuTypes.BREAKFAST) {
+            setFilteredMenu((prevMenu) => [...prevMenu, menuItem]);
+          }
+        });
+        break;
+      case menuTypes.LUNCH:
+        currMenu.forEach((menuItem) => {
+          if (menuItem.type === menuTypes.LUNCH) {
+            setFilteredMenu((prevMenu) => [...prevMenu, menuItem]);
+          }
+        });
+        break;
+      case menuTypes.DINNER:
+        currMenu.forEach((menuItem) => {
+          if (menuItem.type === menuTypes.DINNER) {
+            setFilteredMenu((prevMenu) => [...prevMenu, menuItem]);
+          }
+        });
+        break;
+      default:
+        currMenu.forEach((menuItem) => {
+          if (menuItem.type === menuTypes.BREAKFAST) {
+            setFilteredMenu((prevMenu) => [...prevMenu, menuItem]);
+          }
+        });
+        break;
+    }
+  };
 
   return (
     <div className={styles.menu}>
-      {/* <div className={styles.menuBackground}></div>
-      <div className={styles.overlay}></div> */}
-      {/* <div className={styles.content}> */}
       <div className={styles.headings}>
-        <SecondaryButton label="Breakfast" onClick={handleMenuChange} />
-        <SecondaryButton
-          label="Lunch"
-          onClick={() => setCurrentMenu("lunch")}
-        />
-        <SecondaryButton label="Dinner" onClick={handleMenuChange} />
+        {Object.values(menuTypes).map((menuType) => (
+          <SecondaryButton
+            key={menuType}
+            label={menuType}
+            onClick={() => handleMenuChange(menuType)}
+          />
+        ))}
       </div>
       <Divider width="80%" style={{ borderTop: "2px solid black" }} />
       <div className={styles.menuItems}>
-        {menu
-          .filter((item) => item.type === currentMenu)
-          .map((menuItem) => (
-            <div className={styles.menuItem} key={menuItem.name}>
-              <Image
-                src={`/img/${menuItem.image}`}
-                width={200}
-                height={200}
-                objectFit="cover"
-                alt=""
-                style={{
-                  borderRadius: 8,
-                }}
+        {filteredMenu.map((menuItem) => (
+          <div className={styles.menuItem} key={Math.random()}>
+            <Image
+              src={`/img/${menuItem.image}`}
+              width={200}
+              height={200}
+              objectFit="cover"
+              alt=""
+              style={{
+                borderRadius: 8,
+              }}
+            />
+            <div>
+              <h4>{menuItem.name}</h4>
+              <Divider
+                width="100%"
+                align="left"
+                style={{ borderTop: "1px solid black" }}
               />
-              <div>
-                <h4>{menuItem.name}</h4>
-                <Divider
-                  width="100%"
-                  align="left"
-                  style={{ borderTop: "1px solid black" }}
-                />
-                <p>{menuItem.description}</p>
-                <p>{menuItem.price}</p>
-              </div>
+              <p>{menuItem.description}</p>
+              <p>{menuItem.price}</p>
             </div>
-          ))}
+          </div>
+        ))}
       </div>
     </div>
-
-    // </div>
   );
 };
 
 export default Menu;
-
-// Menu.getLayout = function PageLayout(page) {
-//   return (
-//     <>
-//       {page}
-//       <Footer />
-//     </>
-//   );
-// };
-
-{
-  /* <div className={styles.breakfast}>
-        <h3>Breakfast</h3>
-        <Divider width={150} />
-        <div className={styles.menuItem}>
-          <p>Avocado Toast</p>
-          <p>15₵</p>
-          <p>******</p>
-        </div>
-        <div className={styles.menuItem}>
-          <p>Breakfast Sandwitch</p>
-          <p>15₵</p>
-
-          <p>******</p>
-        </div>
-        <div className={styles.menuItem}>
-          <p>Chicken And Waffles</p>
-          <p>15₵</p>
-
-          <p>******</p>
-        </div>
-        <div className={styles.menuItem}>
-          <p>French Toast</p>
-          <p>15₵</p>
-
-          <p>******</p>
-        </div>
-        <div className={styles.menuItem}>
-          <p>Sausage</p>
-          <p>15₵</p>
-
-          <p>******</p>
-        </div>
-        <div className={styles.menuItem}>
-          <p>Cereal</p>
-          <p>15₵</p>
-
-          <p>******</p>
-        </div>
-        <div className={styles.menuItem}>
-          <p>English Toast</p>
-          <p>15₵</p>
-
-          <p>******</p>
-        </div>
-        <div className={styles.menuItem}>
-          <p>French Fries</p>
-          <p>15₵</p>
-
-          <p>******</p>
-        </div>
-      </div> */
-}

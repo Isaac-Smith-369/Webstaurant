@@ -18,11 +18,19 @@ const NewsLetter = () => {
   const [formData, setFormData] = useReducer(formReducer, {});
   const [submitting, setSubmitting] = useState(false);
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     setSubmitting(true);
-    // console.log(formData.datetime);
-    alert("You have submitted the form");
+    const result = await fetch("/api/newsletter", {
+      method: "POST",
+      body: JSON.stringify(formData),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    const data = await result.json();
+    console.log(data);
+    alert("Thank you for subscribing to our newsletter.");
     setFormData({
       reset: true,
     });
