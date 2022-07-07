@@ -5,12 +5,9 @@ import styles from "/styles/Menu.module.css";
 import { menuTypes } from "utilities/data";
 import SecondaryButton from "components/SecondaryButton";
 
-const Menu = (props) => {
+const Menu = () => {
   const [menu, setMenu] = useState([]);
-  // const [contacts, setContacts] = useState(contactList);
   const [filteredMenu, setFilteredMenu] = useState([]);
-
-  console.log("Contacts: ", props);
 
   const getMenu = async () => {
     const result = await fetch("/api/menu");
